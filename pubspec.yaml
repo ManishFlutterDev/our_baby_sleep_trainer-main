@@ -1,0 +1,55 @@
+name: baby_sleep_scheduler
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.10.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shared_preferences: ^2.0.0
+  sqflite: ^2.2.2
+  flutter_local_notifications: ^3.0.3
+  flutter_native_timezone: ^2.0.0
+  url_launcher: any
+  flutter_linkify: ^5.0.2
+  google_fonts: ^3.0.1
+  flutter_native_splash: ^2.2.16
+#  charts_flutter: ^0.9.0
+  charts_flutter:
+    git:
+      url: https://github.com/google/charts.git
+      path: charts_flutter
+
+  #android_alarm_manager: ^0.4.5+20
+  #vibration: ^1.7.3
+  wakelock: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Oswald
+      fonts:
+        - asset: assets/fonts/Oswald.ttf
+
+## flutter_native_splash-development.yaml
+#flutter_native_splash:
+#  image: assets/images/bgmain.png
+#  color: “42a5f5”
+#  android_disable_fullscreen: true
